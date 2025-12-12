@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora</title>
+
+<style>
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#222;
+  font-family:Arial;
+}
+.calculadora{
+  width:280px;
+  background:#333;
+  padding:15px;
+  border-radius:10px;
+}
+.tela{
+  background:#111;
+  color:#fff;
+  padding:20px;
+  text-align:right;
+  font-size:28px;
+  border-radius:8px;
+  margin-bottom:15px;
+}
+.botoes{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+}
+button{
+  padding:15px;
+  border:0;
+  border-radius:8px;
+  background:#444;
+  color:#fff;
+  font-size:18px;
+}
+button.op{
+  background:#6c4cff;
+}
+button.zero{
+  grid-column:span 2;
+}
+</style>
+
+</head>
+<body>
+
+<div class="calculadora">
+  <div class="tela">0</div>
+
+  <div class="botoes">
+    <button class="op">AC</button>
+    <button class="op">%</button>
+    <button class="op">÷</button>
+    <button class="op">×</button>
+
+    <button>7</button>
+    <button>8</button>
+    <button>9</button>
+    <button class="op">−</button>
+
+    <button>4</button>
+    <button>5</button>
+    <button>6</button>
+    <button class="op">+</button>
+
+    <button>1</button>
+    <button>2</button>
+    <button>3</button>
+    <button class="op">=</button>
+
+    <button class="zero">0</button>
+    <button>,</button>
+  </div>
+</div>
+
+</body>
+</html>
